@@ -62,7 +62,7 @@
 					</span>
             <div id="clock"></div>
         </div>
-        <canvas id="canvas" width="1100" height="680"></canvas>
+        <canvas id="canvas" width="1100" height="680" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}"></canvas>
     </div>
 
 </div>
