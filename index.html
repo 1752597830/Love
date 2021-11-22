@@ -27,7 +27,7 @@
 <body>
 
 <img src="https://ajlovechina.github.io/loveBalloon/static/music.png" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
-<audio class="song-audio-autoplay" controls loop style="display: none;visibility: hidden">
+<audio class="song-audio-autoplay" autoplay loop style="display: none;visibility: hidden">
     <source src="./index_files/music.mp3" type="audio/mp3"/>
 </audio>
 <style type="text/css">
@@ -62,7 +62,7 @@
 					</span>
             <div id="clock"></div>
         </div>
-        <canvas id="canvas" width="1100" height="680" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}"></canvas>
+        <canvas id="canvas" width="1100" height="680"></canvas>
     </div>
 
 </div>
